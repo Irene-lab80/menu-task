@@ -13,11 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Tele2, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: var(--dark);
 }
 
 ul {
