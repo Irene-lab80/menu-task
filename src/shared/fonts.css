@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Tele2';
+  src: url('/fonts/tele2textsanswebshort-regular.woff') format('woff'),
+    url('/fonts/tele2textsanswebshort-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
