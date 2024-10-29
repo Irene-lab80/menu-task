@@ -16,7 +16,6 @@ export const LogoIcon = ({ className = "" }: { className?: string }) => {
       />
       <mask
         id="mask0_2228_277"
-        // style="mask-type:luminance"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

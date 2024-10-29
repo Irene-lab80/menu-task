@@ -4,6 +4,7 @@ import { CloseIcon, MenuIcon } from "../../shared/icons";
 import style from "./MobileMenu.module.scss";
 import { menuData } from "../../utils/menuData";
 import { Location } from "../location/Location";
+import { Link } from "react-router-dom";
 
 export const MobileMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ export const MobileMenu = () => {
           <ul className={style.navList}>
             {menuData.map((menuItem) => (
               <li className={style.navItem} key={menuItem.id}>
-                {menuItem.title}
+                <Link to={menuItem.path}>{menuItem.title}</Link>
               </li>
             ))}
           </ul>

@@ -36,9 +36,17 @@
   }
 }
 
+.logoWrapper {
+  display: flex;
+}
+
 .logo {
   @media (max-width: 425px) {
     width: 48px;
     height: 18px;
   }
+}
+
+.bellWrapper {
+  display: flex;
 }
