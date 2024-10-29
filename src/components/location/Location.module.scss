@@ -1,0 +1,20 @@
+.location {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 22px;
+  color: var(--grey);
+}
+
+.forMobileMenu {
+  @extend .location;
+  font-size: 16px;
+  line-height: 22px;
+  gap: 4px;
+  color: var(--grey-two);
+  svg path {
+    fill: var(--grey-two);
+    width: 24px;
+    height: 24px;
+  }
+}

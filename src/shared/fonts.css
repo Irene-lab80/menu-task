@@ -6,3 +6,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Tele2';
+  src: url('/fonts/tele2textsanswebshort-bold.woff') format('woff'),
+    url('/fonts/tele2textsanswebshort-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

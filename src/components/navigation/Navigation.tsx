@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./Navigation.module.scss";
 
 interface IProps {
@@ -8,14 +9,14 @@ interface IProps {
 
 export const Navigation = ({ menuData, activeId, setActiveId }: IProps) => (
   <nav className={style.nav}>
-    <ul>
+    <ul className={style.list}>
       {menuData.map((menuItem) => (
         <li
           className={activeId === menuItem.id ? style.itemActive : style.item}
           key={menuItem.id}
           onClick={() => setActiveId(menuItem.id)}
         >
-          {menuItem.title}
+          <Link to={"/"}>{menuItem.title}</Link>
         </li>
       ))}
     </ul>

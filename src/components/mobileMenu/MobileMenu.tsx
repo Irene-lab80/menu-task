@@ -3,6 +3,7 @@ import { CloseIcon, MenuIcon } from "../../shared/icons";
 
 import style from "./MobileMenu.module.scss";
 import { menuData } from "../../utils/menuData";
+import { Location } from "../location/Location";
 
 export const MobileMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,6 +41,9 @@ export const MobileMenu = () => {
               </li>
             ))}
           </ul>
+          <div className={style.locationWrapper}>
+            <Location forMobileMenu />
+          </div>
         </nav>
       </div>
     </div>
